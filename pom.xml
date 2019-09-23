@@ -28,12 +28,12 @@
 	<distributionManagement>
 	  <repository>
                <id>central</id>
-              <name>64a61c178032-releases</name>
+              <name>3ace55496c60-releases</name>
                <url>http://3.14.243.159:8081/artifactory/libs-release-local</url>
             </repository>
    	 <snapshotRepository>
                 <id>snapshots</id>
-               <name>64a61c178032-snapshots</name>
+               <name>3ace55496c60-snapshots</name>
                 <url>http://3.14.243.159:8081/artifactory/libs-snapshot-local</url>
              </snapshotRepository>
 	</distributionManagement>
