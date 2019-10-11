@@ -24,7 +24,10 @@ node {
    }
    stage('Sonar') {
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' sonar:sonar"
+         sh "'${mvnHome}/bin/mvn' sonar:sonar \
+  -Dsonar.projectKey=first_devops_project \
+  -Dsonar.host.url=http://18.219.120.199:9000 \
+  -Dsonar.login=430a1b24e1784d2a5aef34eabc03cd77283bebe3"
       } else {
          bat(/"${mvnHome}\bin\mvn" sonar:sonar/)
       }
